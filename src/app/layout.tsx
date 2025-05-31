@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Bebas_Neue } from "next/font/google";
+import Link from "next/link";
+import Image from "next/image";
 
 const font = Bebas_Neue({
   weight: ["400"],
@@ -24,7 +26,21 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="pt-BR">
-      <body className={`antialiased ${font.className}`}>{children}</body>
+      <body className={`antialiased ${font.className}`}>
+        {children}
+        <Link
+          href="https://api.whatsapp.com/send?phone=5515996183121&text=Oi!+Vi+o+site+da+GMD+e+quero+falar+com+um+atendente.+Pode+me+chamar?"
+          target="_blank"
+          className="z-1 fixed bottom-2 right-2"
+        >
+          <Image
+            src="/whatsapp.png"
+            width={60}
+            height={60}
+            alt="ícone do WhatsApp para entrar em contato"
+          />
+        </Link>
+      </body>
     </html>
   );
 }
