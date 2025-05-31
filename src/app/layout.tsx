@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Bebas_Neue } from "next/font/google";
+import localFont from "next/font/local";
 import Link from "next/link";
 import Image from "next/image";
 
-const font = Bebas_Neue({
-  weight: ["400"],
+const font = localFont({
+  src: "./fonts/BebasNeue.ttf",
 });
 
 export const metadata: Metadata = {
