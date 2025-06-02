@@ -54,8 +54,7 @@ export default function Footer() {
             />
           </div>
           <p className="text-white md:w-64 xl:w-96">
-            Referência nacional no comércio de micro-ônibus, atuando com
-            excelência desde 2011.
+            Referência nacional no comércio de micro-ônibus, atuando com excelência desde 2011.
           </p>
         </div>
         <div className="flex flex-col md:flex-row gap-4 md:gap-6 xl:gap-32">
@@ -79,7 +78,7 @@ export default function Footer() {
       <hr className="my-4" />
       <div className="md:flex md:gap-2">
         <p>© GMD Bus. Todos os direitos reservados.</p>
-        <p>Desenvolvido por Snoorky Studio</p>
+        {/* <p>Desenvolvido por Snoorky Studio</p> */}
       </div>
     </footer>
   );
