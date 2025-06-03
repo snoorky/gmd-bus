@@ -8,13 +8,7 @@ interface ButtonProps {
   isPrimary?: boolean;
 }
 
-export function Button({
-  label,
-  target = "_blank",
-  styles,
-  url,
-  isPrimary,
-}: ButtonProps) {
+export function Button({ label, target = "_blank", styles, url, isPrimary }: ButtonProps) {
   return (
     <Link
       href={url}

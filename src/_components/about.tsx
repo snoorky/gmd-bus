@@ -1,49 +1,50 @@
+import Image from "next/image";
+import { Button } from "./button";
+
 export default function About() {
   return (
-    <section id="sobre" className="xl:flex xl:gap-8">
-      <div className="flex flex-col items-center xl:items-start text-center xl:text-start justify-center space-y-2 xl:space-y-4">
-        <hr className="w-10 border border-red-500" />
-        <h4 className="text-gray">Bem-vindo à GMD Bus</h4>
-        <h2 className="w-72 md:w-auto">
-          15 anos de excelência no transporte coletivo
-        </h2>
-        <p className="md:w-2xl xl:w-xl">
-          Somos referência nacional na compra e venda de micro-ônibus
-          multimarcas. Desde 2011, entregamos veículos com procedência
-          garantida, atendimento direto e negociação transparente.
-        </p>
-        <p className="md:w-xl xl:w-lg">
-          Aqui, você encontra mais do que um ônibus: encontra parceria,
-          confiança e soluções pensadas para quem vive do transporte.
-        </p>
+    <section className="flex flex-col md:flex-row items-center gap-8 xl:gap-32">
+      <div className="flex flex-col items-center md:items-start text-center md:text-left space-y-4 md:w-[65%] xl:w-[45%]">
+        <div>
+          <h4 className="text-red">Bem-vindo à GMD Bus</h4>
+          <h2>15 anos de excelência no transporte coletivo</h2>
+        </div>
+        <div className="space-y-2">
+          <p>
+            Somos referência nacional na compra e venda de micro-ônibus multimarcas. Desde 2011,
+            entregamos veículos com procedência garantida, atendimento direto e negociação
+            transparente.
+          </p>
+          <p>
+            Aqui, você encontra mais do que um ônibus: encontra parceria, confiança e soluções
+            pensadas para quem vive do transporte.
+          </p>
+        </div>
+        <Button
+          url="https://api.whatsapp.com/send?phone=5515981377486&text=Olá!+Gostaria+de+falar+com+um+especialista+da+GMD+Bus"
+          label="Solicite uma Consultoria Gratuita"
+          isPrimary
+        />
       </div>
-      <div className="mt-8 flex gap-2 w-full h-96">
-        <div
-          className="relative rounded-lg w-[50%] h-full bg-center bg-cover"
-          style={{
-            backgroundImage:
-              "url('/transport-tourism-road-trip-people-concept-group-happy-passengers-boarding-travel-bus.jpg')",
-          }}
-        >
-          <div className="rounded-lg absolute inset-0 w-full h-full bg-blue/50"></div>
+      <div className="relative flex w-full md:w-[50%] h-80 md:h-96 xl:h-[30rem] mb-8">
+        <div className="absolute border-8 border-white -top-6 -right-4 overflow-hidden rounded-2xl w-[98%] h-[100%]">
+          <Image
+            src="/about-background.jpg"
+            className="absolute object-cover object-[center_30%]"
+            alt="Imagem de background"
+            fill
+          />
         </div>
-        <div className="flex flex-col gap-2 w-[50%] h-full">
-          <div
-            className="relative rounded-lg w-full h-full bg-center bg-cover"
-            style={{
-              backgroundImage:
-                "url('/tourist-buses-parking-sunrise-sunset.jpg')",
-            }}
-          >
-            <div className="rounded-lg absolute inset-0 w-full h-full bg-blue/50"></div>
-          </div>
-          <div
-            className="relative rounded-lg w-full h-full bg-center bg-cover"
-            style={{ backgroundImage: "url('/interior-bus.jpg')" }}
-          >
-            <div className="rounded-lg absolute inset-0 w-full h-full bg-blue/50"></div>
-          </div>
+        <div className="absolute border-8 border-white -bottom-6 -left-4 overflow-hidden rounded-2xl w-[60%] h-[40%]">
+          <Image
+            src="/about-background-secondary.jpg"
+            className="absolute object-cover"
+            alt="Imagem de background"
+            fill
+          />
         </div>
+        <div className="w-1/2 h-full rounded-2xl bg-red"></div>
+        <div className="w-1/2 h-full rounded-2xl bg-blue"></div>
       </div>
     </section>
   );

@@ -10,20 +10,11 @@ const font = localFont({
 
 export const metadata: Metadata = {
   title: "GMD Bus - Transporte de Qualidade",
-  description:
-    "Soluções de transporte confiáveis e eficientes para sua empresa",
-  keywords: [
-    "transporte",
-    "ônibus",
-    "fretamento",
-    "mobilidade",
-    "transporte corporativo",
-  ],
+  description: "Soluções de transporte confiáveis e eficientes para sua empresa",
+  keywords: ["transporte", "ônibus", "fretamento", "mobilidade", "transporte corporativo"],
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{ children: React.ReactNode }>) {
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="pt-BR">
       <body className={`antialiased ${font.className}`}>

@@ -10,11 +10,13 @@ const footerLinks = [
         icon: "",
         title: "Sobre Nós",
         link: "#sobre",
+        target: "_self",
       },
       {
         icon: "",
         title: "Serviços",
         link: "#servicos",
+        target: "_self",
       },
     ],
   },
@@ -25,16 +27,19 @@ const footerLinks = [
         icon: <PhoneCall width={24} height={24} />,
         title: "(15) 99618-3121",
         link: "https://api.whatsapp.com/send?phone=5515996183121&text=Oi!+Vi+o+site+da+GMD+e+quero+falar+com+um+atendente.+Pode+me+chamar?",
+        target: "_blank",
       },
       {
         icon: <Mail width={24} height={24} />,
         title: "contato@gmdbus.com.br",
         link: "mailto:contato@gmdbus.com.br",
+        target: "_blank",
       },
       {
         icon: <MapPin width={24} height={24} />,
         title: "Rodovia Raposo Tavares KM 95, Sorocaba/SP",
         link: "https://www.google.com/maps/dir//GMD+Bus+%7C+GMD+Corretora+-+Rua+Dorli+Nunes+25,+Rod.+Raposo+Tavares,+km+95+-+Caputera,+Sorocaba+-+SP,+18017-376/@-23.5139979,-47.4651656,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x94cf619faeedfa6d:0x7816b5bb13f39c75!2m2!1d-47.4239659!2d-23.5140033?entry=ttu&g_ep=EgoyMDI1MDUyOC4wIKXMDSoASAFQAw%3D%3D",
+        target: "_blank",
       },
     ],
   },
@@ -45,12 +50,13 @@ export default function Footer() {
     <footer className="text-white/85 bg-blue">
       <div className="flex flex-col md:flex-row md:justify-between gap-4">
         <div className="space-y-4 w-72 xl:w-auto">
-          <div className="relative brightness-0 invert w-[128px] md:w-[168px] xl:w-[198px] h-[37px] md:h-[49px] xl:h-[58px]">
+          <div className="relative w-[128px] md:w-[168px] xl:w-[198px] h-[37px] md:h-[49px] xl:h-[58px]">
             <Image
-              src={"/logo.png"}
-              alt="Logo da GMD Bus"
+              src={"/logo.webp"}
               sizes="(max-width: 767px) 128px, (max-width: 1023px) 168px, (max-width: 1279px) 198px, 250px"
+              alt="Logo da GMD Bus"
               fill
+              priority
             />
           </div>
           <p className="text-white md:w-64 xl:w-96">
@@ -65,7 +71,7 @@ export default function Footer() {
                 <Link
                   key={index}
                   href={item.link}
-                  target="_blank"
+                  target={item.target}
                   className="flex gap-2 text-white/75 px-0 py-0 items-center justify-start"
                 >
                   {item.icon} {item.title}
