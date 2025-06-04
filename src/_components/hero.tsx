@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <main className="relative w-screen h-auto pt-6 text-white">
       <Image
-        src="/hero.png"
+        src="/hero-background.png"
         className="absolute object-cover object-center"
         alt="Imagem de background"
         fill
@@ -28,7 +28,7 @@ export default function Hero() {
         <div className="mb-6 md:mb-8 lg:mb-10 xl:mb-12">
           <h6 className="md:w-xl lg:w-3xl">Empresa especializada no comércio de ônibus</h6>
           <h6 className="md:w-xl lg:w-3xl">Compra | Venda | Troca | Avaliação | Financiamento</h6>
-          <h6 className="md:w-xl lg:w-3xl">Referência em Ônibus</h6>
+          <h6 className="md:w-xl lg:w-3xl">Referência nacional em micro-Ônibus</h6>
         </div>
         <Button
           url="https://api.whatsapp.com/send?phone=5515981377486&text=Olá!+Gostaria+de+falar+com+um+consultor+sobre+seguro,+plano+de+saúde+ou+consórcio+sob+medida"

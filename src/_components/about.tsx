@@ -7,7 +7,7 @@ export default function About() {
       <div className="flex flex-col items-center md:items-start text-center md:text-left space-y-4 md:w-[65%] xl:w-[45%]">
         <div>
           <h4 className="text-red">Bem-vindo à GMD Bus</h4>
-          <h2>15 anos de excelência no transporte coletivo</h2>
+          <h2>Mais de 15 anos de experiência no comércio de ônibus</h2>
         </div>
         <div className="space-y-2">
           <p>

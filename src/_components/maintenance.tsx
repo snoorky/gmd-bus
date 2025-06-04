@@ -31,7 +31,7 @@ const services = [
       "Olá!+Gostaria+de+agendar+um+serviço+de+manutenção+de+ar-condicionado+para+meu+ônibus",
   },
   {
-    image: "brush-bus",
+    image: "brush",
     title: "Funilaria e Pintura",
     description: "Retoques e pintura profissional para deixar seu ônibus como novo",
     buttonLabel: "Solicitar Orçamento",
@@ -43,28 +43,28 @@ export default function Maintenance() {
   return (
     <section className="relative">
       <Image
-        src="/services.jpg"
-        className="absolute object-cover"
+        src="/service-background.png"
+        className="absolute object-cover object-[55%_center] transform scale-x-[-1]"
         alt="Imagem de background"
         fill
       />
-      <div className="absolute w-screen h-full bg-blue/70 inset-0"></div>
+      <div className="absolute w-screen h-full bg-blue/40 inset-0"></div>
       <div className="relative flex flex-col xl:flex-row justify-between items-center text-center text-white">
-        <div className="flex flex-col items-center justify-center xl:items-start xl:text-left xl:w-[50%]">
-          <div className="xl:-translate-x-5 relative w-[209px] md:w-[249px] xl:w-[299px] h-[72px] md:h-[86px] xl:h-[103px]">
+        <div className="flex flex-col items-center justify-center xl:items-start xl:text-left xl:w-[50%] space-y-4 md:space-y-6">
+          <div className="relative w-[209px] md:w-[249px] xl:w-[299px] h-[46px] md:h-[54px] xl:h-[65px]">
             <Image
-              src="/service.png"
+              src="/logo-service.webp"
               sizes="(max-width: 767px) 209px, (max-width: 1023px) 249px, (max-width: 1279px) 299px, 350px"
               alt="GMD Service"
               fill
             />
           </div>
-          <p className="my-4 md:my-8 xl:pr-28">
+          <p>
             Cuidamos do seu veículo com a mesma seriedade com que você cuida da sua operação, com
             serviços rápidos, confiáveis e feitos por quem entende do assunto — nossa equipe garante
             qualidade com agilidade para que seu ônibus esteja sempre pronto para rodar.
           </p>
-          <div className="grid gap-4 grid-cols-2 md:grid-cols-4 xl:grid-cols-1 mb-6 md:mb-12 xl:mb-6">
+          <div className="grid gap-4 grid-cols-2 md:grid-cols-4 xl:grid-cols-1">
             {benefits.map((item, index) => (
               <div key={index} className="flex items-center flex-col xl:flex-row gap-2">
                 {item.icon}
