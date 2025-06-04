@@ -52,7 +52,7 @@ export default function Footer() {
         <div className="space-y-4 w-72 xl:w-auto">
           <div className="relative w-[128px] md:w-[168px] xl:w-[198px] h-[37px] md:h-[49px] xl:h-[58px]">
             <Image
-              src="/logos.webp"
+              src="/logo-light.webp"
               sizes="(max-width: 767px) 128px, (max-width: 1023px) 168px, (max-width: 1279px) 198px, 250px"
               alt="Logo da GMD Bus"
               fill
