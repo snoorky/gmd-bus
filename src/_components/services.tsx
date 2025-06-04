@@ -4,18 +4,17 @@ import { Button } from "./button";
 const services = [
   {
     image: "adquira",
-    title: "Adquira seu Micro-ônibus",
+    title: "Adquira seu Ônibus",
     description: "Encontramos o veículo ideal para o seu transporte com rapidez e segurança",
     buttonLabel: "Fale com a GMD",
-    buttonText:
-      "Olá!+Tenho+interesse+em+adquirir+um+micro-ônibus.+Pode+me+ajudar+a+encontrar+o+ideal?",
+    buttonText: "Olá!+Tenho+interesse+em+adquirir+um+ônibus.+Pode+me+ajudar+a+encontrar+o+ideal?",
   },
   {
     image: "venda",
-    title: "Venda seu Micro-ônibus",
+    title: "Venda seu Ônibus",
     description: "Valorizamos seu veículo com base no mercado e cuidamos de toda a negociação",
     buttonLabel: "Solicitar Avaliação",
-    buttonText: "Oi!+Quero+vender+meu+micro-ônibus.+Como+funciona+a+avaliação?",
+    buttonText: "Oi!+Quero+vender+meu+ônibus.+Como+funciona+a+avaliação?",
   },
   {
     image: "troca",
@@ -30,7 +29,7 @@ const services = [
     title: "Financiamento",
     description: "Facilitamos a sua compra com crédito sob medida e apoio no processo",
     buttonLabel: "Simular Financiamento",
-    buttonText: "Oi!+Quero+simular+um+financiamento+para+compra+de+micro-ônibus",
+    buttonText: "Oi!+Quero+simular+um+financiamento+para+compra+de+ônibus",
   },
   {
     image: "avaliacao",
@@ -45,9 +44,9 @@ export default function Services() {
   return (
     <div className="relative overflow-hidden">
       <section className="relative z-1 flex flex-col text-center">
-        <h2 className="text-blue">Comércio de Micro-ônibus</h2>
-        <h4 className="leading-5 md:leading-7 lg:leading-8 md:w-lg m-auto">
-          Atendimento completo e direto para quem quer negociar micro-ônibus com confiança
+        <h2 className="text-blue">Comércio de Ônibus</h2>
+        <h4 className="leading-5 md:leading-7 lg:leading-8 w-64 md:w-auto m-auto">
+          Atendimento completo e direto para quem quer negociar ônibus com confiança
         </h4>
         <div className="grid gap-4 md:gap-6 grid-cols-2 xl:grid-cols-3 my-6 md:my-12">
           {services.map((item, index) => (

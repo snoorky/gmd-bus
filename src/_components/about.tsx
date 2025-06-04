@@ -11,13 +11,13 @@ export default function About() {
         </div>
         <div className="space-y-2">
           <p>
-            Somos referência nacional na compra e venda de micro-ônibus multimarcas. Desde 2011,
-            entregamos veículos com procedência garantida, atendimento direto e negociação
-            transparente.
+            Com mais de 15 anos de estrada, a GMD | Bus é referência nacional no comércio de
+            micro-ônibus multimarcas, construímos uma reputação sólida baseada na confiança e no
+            atendimento personalizado.
           </p>
           <p>
-            Aqui, você encontra mais do que um ônibus: encontra parceria, confiança e soluções
-            pensadas para quem vive do transporte.
+            Nosso objetivo é facilitar sua negociação oferecendo as melhores condições e um suporte
+            completo para que sua empresa realize um exelente negócio.
           </p>
         </div>
         <Button

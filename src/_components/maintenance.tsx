@@ -5,7 +5,7 @@ import { Clock, Headset, ShieldCheck, Wrench } from "lucide-react";
 const benefits = [
   {
     icon: <Wrench width={32} height={32} className="text-red" />,
-    description: "Equipe especializada em micro-ônibus",
+    description: "Equipe especializada em ônibus",
   },
   {
     icon: <Clock width={32} height={32} className="text-red" />,
@@ -24,7 +24,7 @@ const benefits = [
 const services = [
   {
     image: "air-conditioner",
-    title: "Manutenção de\nAr-condicionado",
+    title: "Manutenção Ar-condicionado",
     description: "Serviço preciso, rápido e confiável para o conforto dos seus passageiros",
     buttonLabel: "Agendar Serviço",
     buttonText:
@@ -32,7 +32,7 @@ const services = [
   },
   {
     image: "brush-bus",
-    title: "Pequenos Reparos\ne Pintura",
+    title: "Funilaria e Pintura",
     description: "Retoques e pintura profissional para deixar seu ônibus como novo",
     buttonLabel: "Solicitar Orçamento",
     buttonText: "Oi!+Gostaria+de+solicitar+um+orçamento+para+pequenos+reparos+e+pintura",
@@ -53,7 +53,7 @@ export default function Maintenance() {
         <div className="flex flex-col items-center justify-center xl:items-start xl:text-left xl:w-[50%]">
           <div className="xl:-translate-x-5 relative w-[209px] md:w-[249px] xl:w-[299px] h-[72px] md:h-[86px] xl:h-[103px]">
             <Image
-              src={"/service.png"}
+              src="/service.png"
               sizes="(max-width: 767px) 209px, (max-width: 1023px) 249px, (max-width: 1279px) 299px, 350px"
               alt="GMD Service"
               fill
@@ -64,7 +64,7 @@ export default function Maintenance() {
             serviços rápidos, confiáveis e feitos por quem entende do assunto — nossa equipe garante
             qualidade com agilidade para que seu ônibus esteja sempre pronto para rodar.
           </p>
-          <div className="grid gap-4 grid-cols-2 md:grid-cols-4 xl:grid-cols-1 mb-6 md:mb-12">
+          <div className="grid gap-4 grid-cols-2 md:grid-cols-4 xl:grid-cols-1 mb-6 md:mb-12 xl:mb-6">
             {benefits.map((item, index) => (
               <div key={index} className="flex items-center flex-col xl:flex-row gap-2">
                 {item.icon}
@@ -78,7 +78,7 @@ export default function Maintenance() {
             isPrimary
           />
         </div>
-        <div className="grid grid-cols-2 my-6 md:my-12 gap-4 md:gap-6 xl:w-[60%]">
+        <div className="grid grid-cols-2 my-6 md:my-12 gap-3 md:gap-6 xl:w-[60%]">
           {services.map((item, index) => (
             <div
               key={index}
@@ -95,7 +95,7 @@ export default function Maintenance() {
                     fill
                   />
                 </div>
-                <div className="p-2 md:p-6">
+                <div className="p-1.5 md:p-6">
                   <h3 className="whitespace-pre-line md:whitespace-normal">{item.title}</h3>
                   <p className="text-white/75">{item.description}</p>
                 </div>
