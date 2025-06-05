@@ -21,10 +21,8 @@ export default function Hero() {
             priority
           />
         </div>
-        <h1 className="xl:w-3xl absolute top-14 xl:top-2">
-          É tudo sobre <strong>Ônibus</strong>
-        </h1>
-        <div className="absolute bottom-8">
+        <h1 className="xl:w-3xl absolute top-14 xl:top-2">É tudo sobre Ônibus</h1>
+        <div className="absolute bottom-4">
           <h6>Empresa especializada no comércio de ônibus</h6>
           <h6>Compra | Venda | Troca | Avaliação | Financiamento</h6>
           <h6>Referência nacional em micro-Ônibus</h6>
