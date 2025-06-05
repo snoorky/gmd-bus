@@ -85,10 +85,10 @@ export default function Maintenance() {
               className="flex flex-col rounded-2xl justify-between overflow-hidden pb-2 md:pb-4 border border-orange bg-blue/50"
             >
               <div>
-                <div className="relative w-[170px] md:w-[340px] lg:w-[440px] xl:w-[400px] 2xl:w-[400px] h-[115px] md:h-[230px] lg:h-[276px] xl:h-[240px] 2xl:h-[266px]">
+                <div className="relative w-[170px] md:w-[340px] lg:w-[440px] xl:w-[400px] 2xl:w-[500px] h-[115px] md:h-[230px] lg:h-[276px] xl:h-[240px] 2xl:h-[286px]">
                   <Image
                     src={`/${item.image}.jpg`}
-                    sizes="(max-width: 767px) 170px, (max-width: 1023px) 340px, (max-width: 1279px) 440px, 500px"
+                    sizes="(max-width: 767px) 170px, (max-width: 1023px) 340px, (max-width: 1279px) 440px, 600px"
                     className="absolute object-cover"
                     alt={item.title}
                     loading="lazy"

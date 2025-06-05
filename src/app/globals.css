@@ -19,7 +19,6 @@
   h1 {
     @apply text-4xl md:text-5xl lg:text-6xl xl:text-7xl;
     @apply mt-6 md:mt-12 xl:mt-32;
-    @apply mb-2 md:mb-4;
   }
 
   h2 {
@@ -56,8 +55,7 @@
 
   main {
     @apply px-4 md:px-16 lg:px-24 xl:px-32;
-    @apply pb-8 md:pb-16 lg:pb-24 xl:pb-32;
-    @apply md:min-h-[26rem] lg:min-h-[30rem] xl:min-h-[35rem];
+    @apply min-h-[20rem] md:min-h-[26rem] lg:min-h-[30rem] xl:min-h-[34rem];
   }
 
   section {
