@@ -11,7 +11,7 @@ export default function Hero() {
         fill
         priority
       />
-      <div className="absolute w-screen h-full bg-blue/50 inset-0"></div>
+      <div className="absolute w-screen h-full bg-blue/30 inset-0"></div>
       <div className="relative flex flex-col items-center text-center">
         <div className="relative w-[128px] md:w-[168px] xl:w-[198px] h-[37px] md:h-[49px] xl:h-[58px]">
           <Image

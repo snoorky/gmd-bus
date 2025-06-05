@@ -49,10 +49,9 @@
   a {
     @apply rounded-2xl;
     @apply flex items-center justify-center;
-    @apply gap-2;
-    @apply py-1.5 md:py-2 xl:py-1.5;
-    @apply px-4 md:px-6;
-    @apply text-sm md:text-lg lg:text-xl xl:text-lg;
+    @apply py-1.5;
+    @apply px-3;
+    @apply text-[12px] md:text-sm lg:text-lg;
   }
 
   main {
