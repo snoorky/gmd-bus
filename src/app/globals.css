@@ -42,15 +42,11 @@
     @apply text-sm md:text-lg lg:text-xl xl:text-lg;
   }
 
-  strong {
-    @apply text-red font-normal;
-  }
-
   a {
     @apply rounded-2xl;
     @apply flex items-center justify-center;
-    @apply py-1.5;
-    @apply px-3;
+    @apply py-0.5;
+    @apply px-4;
     @apply text-[12px] md:text-sm lg:text-lg;
   }
 

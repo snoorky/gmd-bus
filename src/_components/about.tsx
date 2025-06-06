@@ -26,16 +26,16 @@ export default function About() {
           isPrimary
         />
       </div>
-      <div className="relative flex w-full md:w-[50%] h-80 md:h-96 xl:h-[30rem] mb-8">
-        <div className="absolute border-8 border-white -top-6 -right-4 overflow-hidden rounded-2xl w-[98%] h-[100%]">
+      <div className="relative flex w-full md:w-[50%] h-80 md:h-96 xl:h-[30rem]">
+        <div className="absolute border-8 border-white -top-2 -right-2 overflow-hidden rounded-2xl w-[98%] h-[98%]">
           <Image
-            src="/about-background.jpg"
-            className="absolute object-cover object-[center_30%]"
+            src="/about-background.png"
+            className="absolute object-cover"
             alt="Imagem de background"
             fill
           />
         </div>
-        <div className="absolute border-8 border-white -bottom-6 -left-4 overflow-hidden rounded-2xl w-[60%] h-[40%]">
+        <div className="absolute border-8 border-white -bottom-2 -left-2 overflow-hidden rounded-2xl w-[60%] h-[40%]">
           <Image
             src="/about-background-secondary.jpg"
             className="absolute object-cover"

@@ -45,6 +45,10 @@ export default function Services() {
     <div className="relative overflow-hidden">
       <section className="relative z-1 flex flex-col text-center">
         <h2 className="text-blue">Comércio de Ônibus</h2>
+        <p className="m-auto w-72 md:w-auto font-medium">
+          Multimarcas • Zero KM e Seminovos • Rodoviários • Urbanos • Escolares • Rurais • Motorhome
+          e outros
+        </p>
         <h4 className="leading-5 md:leading-7 lg:leading-8 w-64 md:w-auto m-auto">
           Atendimento completo e direto para quem quer negociar ônibus com confiança
         </h4>
