@@ -23,7 +23,7 @@ const benefits = [
 
 const services = [
   {
-    image: "air-conditioner",
+    image: "air.png",
     title: "Manutenção Ar-condicionado",
     description: "Serviço preciso, rápido e confiável para o conforto dos seus passageiros",
     buttonLabel: "Agendar Serviço",
@@ -31,7 +31,7 @@ const services = [
       "Olá!+Gostaria+de+agendar+um+serviço+de+manutenção+de+ar-condicionado+para+meu+ônibus",
   },
   {
-    image: "brush",
+    image: "brush.jpg",
     title: "Funilaria e Pintura",
     description: "Retoques e pintura profissional para deixar seu ônibus como novo",
     buttonLabel: "Solicitar Orçamento",
@@ -87,7 +87,7 @@ export default function Maintenance() {
               <div>
                 <div className="relative w-[170px] md:w-[340px] lg:w-[440px] xl:w-[400px] 2xl:w-[500px] h-[115px] md:h-[230px] lg:h-[276px] xl:h-[240px] 2xl:h-[286px]">
                   <Image
-                    src={`/${item.image}.jpg`}
+                    src={`/${item.image}`}
                     sizes="(max-width: 767px) 170px, (max-width: 1023px) 340px, (max-width: 1279px) 440px, 600px"
                     className="absolute object-cover"
                     alt={item.title}
